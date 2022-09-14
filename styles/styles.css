@@ -7,28 +7,99 @@
 }
 
 :root {
-  --cyan: hsl(179, 62%, 43%);
+--cyan: hsl(179, 62%, 43%);
 --Yellow: hsl(71, 73%, 54%);
 --Gray: hsl(204, 43%, 93%);
 --Blue: hsl(218, 22%, 67%);
---font:'Karla', sans-serif;
+--font-family:'Karla', sans-serif;
 }
 
 body{
+    font-family: var(--font-family);
     width: 100vw;
-    background-color: var(--Blue);
+    background-color: var(--Gray);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .section__join{
-    width: 70%;
-background-color: var(--Gray);
-font-size: 12px;
+width: 80%;
+background-color: white;
+margin-top: 4.5rem; 
+padding: 1rem 0.8rem;
 }
 
 .section__join--title{
     color: var(--cyan);
+    font-size: 1.3rem;
+    padding-top: 0.4rem;
 }
 .section__join--subtitle{
     color: var(--Yellow);
+    font-size: 1rem;
+    padding-top: 0.8rem;
+    font-weight: 600;
 }
-p
+.section__join--paragraph{
+    font-size: 0.9rem;
+    padding-top: 1.2rem;
+    padding-bottom: 2rem;
+    line-height: 1.5rem;
+    color: rgba(0, 0, 0, 0.609);
+}
+
+.section__price{
+    width: 80%;
+    background-color: var(--cyan);
+    padding: 1rem 1rem;
+}
+.section__price--title{
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 100;
+}
+.section__price--bold{
+    color: white;
+    font-size: 2rem;
+    font-weight: 900;
+    padding-top: 1.2rem;
+}
+.section__price--slim{
+    font-size: 1rem;
+    font-weight: 100;
+    color: rgba(255, 255, 255, 0.55);
+}
+.section__price--paragraph{
+    padding-top: 1rem;
+    color: rgba(255, 255, 255, 0.87);
+}
+.section__price--button{
+width: 96%;
+background-color: var(--Yellow);
+border-radius: 0.3rem;
+border: none;
+color: white;
+padding: 0.9rem;
+margin: 2rem auto 0.5rem;
+font-size: 1rem;
+}
+.section__why{
+    width: 80%;
+    background-color:  hsl(179, 39%, 55%);
+    padding: 1rem 1rem;
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 100;
+    margin-bottom: 6rem;
+}
+.section__why--title{
+    margin-bottom: 1rem;
+}
+li{
+    list-style: none;
+    color: rgba(255, 255, 255, 0.733);
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+}
+
