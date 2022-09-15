@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family:'Karla', sans-serif;
 }
 
 :root {
@@ -11,23 +12,24 @@
 --Yellow: hsl(71, 73%, 54%);
 --Gray: hsl(204, 43%, 93%);
 --Blue: hsl(218, 22%, 67%);
---font-family:'Karla', sans-serif;
 }
 
 body{
     font-family: var(--font-family);
     width: 100vw;
     background-color: var(--Gray);
-    display: flex;
-    flex-direction: column;
     align-items: center;
 }
-
+.wrapper{
+    margin: 4.5rem auto;
+    align-items: center;
+}
 .section__join{
 width: 80%;
 background-color: white;
 margin-top: 4.5rem; 
 padding: 1rem 0.8rem;
+margin: auto;
 }
 
 .section__join--title{
@@ -53,6 +55,7 @@ padding: 1rem 0.8rem;
     width: 80%;
     background-color: var(--cyan);
     padding: 1rem 1rem;
+    margin: auto;
 }
 .section__price--title{
     color: white;
@@ -91,7 +94,8 @@ font-size: 1rem;
     color: white;
     font-size: 0.8rem;
     font-weight: 100;
-    margin-bottom: 6rem;
+    margin: auto;
+    line-height: 1rem;
 }
 .section__why--title{
     margin-bottom: 1rem;
@@ -103,3 +107,26 @@ li{
     font-size: 0.9rem;
 }
 
+@media (min-width: 768px) {
+.wrapper {
+    width: 750px;
+    display: grid;
+    border-radius: 1rem;
+    grid-template-columns: 1fr 1fr;
+    margin:  10rem auto;
+}
+.section__join{
+    grid-area: 1/ 1/ 2/ 3;
+    padding: 2rem 3rem 1rem;
+}
+.section__price{
+    margin-right: 0;
+    margin-top: 0;
+    padding: 2rem 2rem 1.1rem;;
+}
+.section__why{
+    margin-left: 0;
+    padding: 2rem 2rem 2.4rem;
+    margin-top: 0;
+}
+}
