@@ -22,6 +22,7 @@ body {
 }
 .wrapper {
   margin: 4.5rem auto;
+  border-radius: 1rem;
   align-items: center;
 }
 .section__join {
@@ -31,6 +32,7 @@ body {
   padding: 1rem;
   margin-bottom: 3rem;
   margin: auto;
+  border-radius: .3rem .3rem 0 0;
 }
 
 .section__join--title {
@@ -51,7 +53,7 @@ body {
   padding-top: 1.2rem;
   padding-bottom: 1.2rem;
   line-height: 1.5rem;
-  color: rgba(0, 0, 0, 0.609);
+  color:var(--Blue);
 }
 
 .section__price {
@@ -91,46 +93,56 @@ body {
   font-size: 1rem;
 }
 .section__why {
+  border-radius: 0 0 .3rem .3rem;
   width: 83%;
   background-color: hsl(179, 39%, 55%);
-  padding: 1.5rem 1.5rem;
+  padding: 1.2rem 1.2rem 1rem;
   color: white;
   font-size: 0.8rem;
   font-weight: 100;
   margin: auto;
+  
 }
 .section__why--title {
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 li {
   list-style: none;
   color: rgba(255, 255, 255, 0.733);
   margin-bottom: 0.5rem;
-  font-size: 0.9rem;
-  line-height: 1rem;
+  font-size: 0.85rem;
+  line-height: .8rem;
+
 }
 
 @media (min-width: 768px) {
   .wrapper {
     width: 750px;
     display: grid;
-    border-radius: 1rem;
     grid-template-columns: 1fr 1fr;
     margin: 10rem auto;
   }
   .section__join {
     grid-area: 1/ 1/ 2/ 3;
-    padding: 2rem 3rem 1rem;
+    padding: 2rem 2rem 0;
+    margin-bottom: -3rem;
+    border-radius: .3rem .3rem 0 0;
+  }
+  .section__join--title{
+    font-size: 1.5rem;
+    margin-left: -.5rem;
   }
   .section__price {
     margin-right: 0;
     margin-top: 0;
-    padding: 2rem 2rem 1.1rem;
+    padding: 2rem 2rem 2rem;
+    border-radius: 0 0 0 .3rem;
   }
   .section__why {
     margin-left: 0;
-    padding: 2rem 2rem 2.4rem;
+    padding: 2rem 2rem 2.1rem;
     margin-top: 0;
+    border-radius: 0 0 .3rem 0;
   }
 }
