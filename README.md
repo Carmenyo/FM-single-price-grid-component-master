@@ -2,7 +2,7 @@
 
 A subscription pricing card project completed as part of the Frontend Mentor challenges. This project involves creating a pricing card using HTML and CSS Grid, presenting the conditions and prices of a monthly subscription service. By leveraging CSS Grid, the design achieves a well-organized layout for the pricing details.
 
-![Design preview for the Single price grid component coding challenge](./design/desktop-preview.jpg)
+![Design preview for the Single price grid component coding challenge](./images/Neutral%20Minimal%20Shadow%20Photographer%20Frame%20Mockup%20Pinterest%20Pin.png)
 
 ## Features
 
